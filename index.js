@@ -19,7 +19,7 @@ function pageOut() {
 /*end of not sure entirely how this works*/
 
 function randomColors() {
-  var changeArray = $("#randomColors").html();
+  var changeArray = $("#randomColors").text();
   changeArray = changeArray.split("");
   var newString = "";
 

@@ -128,6 +128,26 @@ main {
   padding-left: 15px;
 }
 
+/* IMG CAPTION */
+
+#page .imgWCap img {
+  border-radius: 25px 25px 0 0;
+  margin-bottom: 0;
+}
+
+.imgCap {
+  text-align: center;
+  font-size: 62%;
+  background-color: grey;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding: 5px;
+  border-radius: 0 0 25px 25px;
+}
+
+
+/* IMG CAPTION */
+
 /* BUTTON STYLING */
 
 /* BUTTON STYLING */
@@ -179,13 +199,13 @@ button:after {
 button:hover:before, button:hover:after {
   width: calc(100% + 12px);
   height: calc(100% + 12px);
-  border-color: #fff
+  border-color: #fff;
 }
 
 button:hover {
   color: #353535;
   background-color: #fff;
-  border-color: #fff
+  border-color: #fff;
 }
 
 /* BUTTON STYLING END */
