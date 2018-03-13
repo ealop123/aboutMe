@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ezekiel - About</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Ezekiel Lopez, donating, and his need to go to college.">
+  <link rel="icon" href="http://csisweb.palomar.edu/~Lop70570/imgs/favIcon2.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <script src="../jquery.js"></script>
+  <script>
+    $(document).ready(function() {
+
+      $("body").hide();
+      $("body").fadeIn(2500);
+
+      $('a').click(function(e) {
+        e.preventDefault();
+        var newLocation = this.href;
+        $('body').fadeOut(1000, function() {
+          window.location = newLocation;
+        });
+      });
+
+      $("#backButton").click(function() {
+        $('body').fadeOut(1000, function() {
+          window.history.back();
+        });
+      });
+    });
+  </script>
+  <style>
+    #backButton {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="backButton">Back</button>
+  <div id="page">
+    <header>
+      <h1>What are my goals,<br>How am I going to get there?</h1></header>
+    <main>
+      <h2>I want to unlock the brain</h2>
+      <p>Since a young age I have been facinated with the brain and human conciousness. I have decided to clarify neurochemistry. The best way I can explain my long term goal is, translating neurochemical activity into human conciousness. More accurately
+        describe how the experience of being alive is related to how our brain is operating. I believe the best way to do this is through mechiene learning. Essentially making a <a class="offSite" href="https://www.sciencealert.com/scientists-put-worm-brain-in-lego-robot-openworm-connectome">robot brain</a>.<br>
+        <img src="robot brain" alt="robot you"><br> There is already initiative to upload the human species into a matrix type utopia, this is not my goal. The research I want to be involved in may contribute to fundemental knowledge nessacary for those
+        technologies. <b>More immediately valueable:</b> understanding how what the human species experiences, and the chemical activitiy inside the brain, go hand in hand. This could revolutionize our understanding and treatment of alzheimer's, mental
+        illness, and the human condition </p>
+      <h2>Heading a Research Team</h2>
+      <p>The place I feel I would best fit in this aspiration is headding a research team. I want to understand the sciences nessacary to move in the right direction, but deligate tasks to experts in specific fields. I want to represent the team, keep the
+        purpose clear, communication efficent, and funding plentaful. I am not fit for this position yet. I believe there is a need for this research, and I believe I have the passion and ambition to equip my life to uncovering these goals.</p>
+      <h2>How to get there</h2>
+      <p>Education is my current step. My goal major is Biochemistry with double minor in Computer Science and Buisness. I will eventually move into either Neurochemistry or Pharmacology for my grad work. The education step is large on its own, and expensive
+        too. I have to pay for school, which has been a problem. Fortunately, as of January 29th, my father has generously given me his Navy benifits to education. I will have 12 months of school paid by the government, and housing allowance during that
+        time. With these twelve months I will not only study my regular subjects, but obtain marketable skills in computer science. </p>
+      <h2>Long term financing</h2>
+      <p>I would prefer to pay for my school out of pocket. I just need a profession that is flexible enough to layer in with school. Web design is my current study, which I will potentially obtain a certificate for this next semester. With a continueing
+        understanding of computer science I will be able to find work that supports myself while going to school.</p>
+      <h2>What have I done?</h2>
+      <p>I continue to value peace of mind as a lifestyle. It is impossible for me to stand firmly in reality if I do not know the legs I stand upon, nor the mind I work with. To achieve inner peace, I have studied motivational authors such as Zig Ziglar
+        and Dale Carnegie. I have studided the four noble truths and eightfold path of Buddhism. With a good foundation I have pushed myself constantly outside of my comfort zone, socalizing in new situations. I have worked going door to door with sales-like
+        companies, learning how buisness works. I spent a summer selling water on the beach. If you want to look over <a href="my resume">my resume</a> feel free.</p>
+      <h2>That's Me</h2>
+      <p>I think that about sums it up. If you have any questions or requests, feel free to <a href="ask me">ask me</a></p>
+    </main>
+  </div>
+</body>
+
+</html>

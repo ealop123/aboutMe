@@ -1,6 +1,7 @@
 html {
-    background: linear-gradient(to right, #4a6591, rgb(77, 124, 198) 13%, rgb(149, 180, 229) 33%, rgb(77, 124, 198) 53%, #4a6591);
+  background: linear-gradient(to right, #4a6591, rgb(77, 124, 198) 13%, rgb(149, 180, 229) 33%, rgb(77, 124, 198) 53%, #4a6591);
 }
+
 body {
   font-size: 207%;
 }
@@ -12,79 +13,82 @@ body {
 /* Intro & Body animation css */
 
 #intro {
-    background: #E8E8E8;
-    text-align: center;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
+  background: #E8E8E8;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 #intro img {
-    display: none;
-    border-radius: 50%;
-    padding-top: 20px;
+  display: none;
+  border-radius: 50%;
+  padding-top: 20px;
 }
 
 #intro button {
-    position: absolute;
-    bottom: 100px;
-    right: 20px;
-    opacity: 0.25;
+  position: absolute;
+  bottom: 100px;
+  right: 20px;
+  opacity: 0.25;
 }
 
 /*maybe use png instead of txt*/
 
 #intro ._1 {
-    font-size: 25vmin;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    display: none;
+  font-size: 25vmin;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  display: none;
 }
 
 #intro ._2 {
-    font-size: 10vmin;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    display: none;
+  font-size: 10vmin;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  display: none;
 }
 
-._1,
-._2,
-._3 {
-    display: none;
-}
-/*end intro animation css*/
-/*end intro animation css*/
-/*end intro animation css*/
-
-#page img {
-  margin: 10% 0 10% 0;
+._1, ._2, ._3 {
+  display: none;
 }
 
+/*end intro animation css*/
 
+/*end intro animation css*/
+
+/*end intro animation css*/
 
 /* link styling */
+
 /* link styling */
+
 /* link styling */
-a:link {
+
+a:not(.offSite):link {
   color: rgb(149, 180, 229);
   text-decoration: none;
   font-weight: bold;
   background-color: #4a6591;
-  border-radius: 35%;
+  border-radius: 15px;
 }
-a:hover {
+
+a:not(.offSite):hover {
   color: white;
 }
-a:visited {
+
+a:not(.offSite):visited {
   color: purple;
 }
+
 /* end link styling*/
+
 /* end link styling*/
+
 /* end link styling*/
 
 /* end js animation nessacary css */
@@ -93,26 +97,35 @@ a:visited {
 
 /* end js animation nessacary css */
 
-header {
-    text-align: center;
-    background-color: rgba(192, 192, 192, 0.55);
-    line-height: 4em;
-    border: 1px solid rgba(0, 0, 0, 0.55);
+#page {
+  border: 1px solid rgba(0, 0, 0, 0.55);
+  background-color: rgba(140, 140, 140, 0.55);
+  border-radius: 25px;
 }
 
-header h1,
+#page img {
+  margin: 10% auto 10% auto;
+  width: 90%;
+  display: block;
+}
+
 header {
-    margin: 0 0 0 0;
+  text-align: center;
+  background-color: rgba(192, 192, 192, 0.55);
+  line-height: 4em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+  border-radius: 25px;
+}
+
+header h1, header {
+  margin: 0 0 0 0;
+  text-shadow: 1px 1px 2px;
 }
 
 main {
-    background-color: rgba(140, 140, 140, 0.55);
-    margin-top: -1px;
-    padding-top: 1px;
-    border-left: 1px solid rgba(0, 0, 0, 0.55);
-    border-right: 1px solid rgba(0, 0, 0, 0.55);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.55);
-    padding-left: 15px;
+  margin-top: -1px;
+  padding-top: 1px;
+  padding-left: 15px;
 }
 
 /* BUTTON STYLING */
@@ -124,57 +137,55 @@ main {
 /* BUTTON STYLING */
 
 button {
-    color: #454545;
-    background: transparent;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #454545;
-    position: relative;
-    margin: 1em;
-    display: inline-block;
-    padding: 0.5em 1em;
-    transition: all 0.3s ease-in-out;
-    text-align: center;
-    font-weight: bold;
+  color: #454545;
+  background: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #454545;
+  position: relative;
+  margin: 1em;
+  display: inline-block;
+  padding: 0.5em 1em;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-weight: bold;
 }
 
-button:before,
-button:after {
-    content: '';
-    display: block;
-    position: absolute;
-    border-color: #454545;
-    box-sizing: border-box;
-    border-style: solid;
-    width: 1em;
-    height: 1em;
-    transition: all 0.3s ease-in-out
+button:before, button:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-color: #454545;
+  box-sizing: border-box;
+  border-style: solid;
+  width: 1em;
+  height: 1em;
+  transition: all 0.3s ease-in-out
 }
 
 button:before {
-    top: -6px;
-    left: -6px;
-    border-width: 2px 0 0 2px;
-    z-index: 5;
+  top: -6px;
+  left: -6px;
+  border-width: 2px 0 0 2px;
+  z-index: 5;
 }
 
 button:after {
-    bottom: -6px;
-    right: -6px;
-    border-width: 0 2px 2px 0;
+  bottom: -6px;
+  right: -6px;
+  border-width: 0 2px 2px 0;
 }
 
-button:hover:before,
-button:hover:after {
-    width: calc(100% + 12px);
-    height: calc(100% + 12px);
-    border-color: #fff
+button:hover:before, button:hover:after {
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  border-color: #fff
 }
 
 button:hover {
-    color: #353535;
-    background-color: #fff;
-    border-color: #fff
+  color: #353535;
+  background-color: #fff;
+  border-color: #fff
 }
 
 /* BUTTON STYLING END */
@@ -185,9 +196,10 @@ button:hover {
 
 /* BUTTON STYLING END */
 
+/* computer specific styling */
 
 /* computer specific styling */
-/* computer specific styling */
+
 /* computer specific styling */
 
 @media only screen and (max-width: 800px) {

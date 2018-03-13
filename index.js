@@ -3,23 +3,33 @@ function main() {
   $("#skip").click(skip);
   checkMainPageVisit();
   randomColors();
+  pageOut();
 }
 
+/*I dont entirely understand how this works*/
+function pageOut() {
+  $('a').click(function(e) {
+    e.preventDefault();
+    newLocation = this.href;
+    $('body').fadeOut(1000, function() {
+      window.location = newLocation;
+    });
+  });
+}
+/*end of not sure entirely how this works*/
 
 function randomColors() {
   var changeArray = $("#randomColors").html();
-  console.log(changeArray);
-  console.log(changeArray.split(""));
   changeArray = changeArray.split("");
   var newString = "";
+
   function randomNumber() {
-    return parseInt(Math.random()*360)
+    return parseInt(Math.random() * 360)
   }
   for (element in changeArray) {
-    newString += "<span style=\"color: rgb("+randomNumber()+", "+randomNumber()+", "+randomNumber()+");\">"+changeArray[element]+"</span>";
+    newString += "<span style=\"color: rgb(" + randomNumber() + ", " + randomNumber() + ", " + randomNumber() + ");\">" + changeArray[element] + "</span>";
   }
   $("#randomColors").html(newString);
-
 }
 
 
