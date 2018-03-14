@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ezekiel - About</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Ezekiel Lopez, donating, and his need to go to college.">
+  <link rel="icon" href="http://csisweb.palomar.edu/~Lop70570/imgs/favIcon2.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src="./jquery.js"></script>
+  <script>
+    $(document).ready(function() {
+
+      $("body").hide();
+      $("body").fadeIn(2500);
+
+      $('a').click(function(e) {
+        e.preventDefault();
+        var newLocation = this.href;
+        $('body').fadeOut(1000, function() {
+          window.location = newLocation;
+        });
+      });
+
+      $("#backButton").click(function() {
+        $('body').fadeOut(1000, function() {
+          window.history.back();
+        });
+      });
+    });
+  </script>
+  <style>
+    /* #backButton {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    } */
+    body {
+      text-align: center;
+      vertical-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>THIS PAGE IS COMING SOON</h1>
+  <button id="backButton">Go back</button>
+</body>
+
+</html>

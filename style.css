@@ -82,7 +82,10 @@ a:not(.offSite):hover {
 }
 
 a:not(.offSite):visited {
-  color: purple;
+  color: rgb(149, 180, 229);
+}
+a:not(.offSite):hover {
+  color: white;
 }
 
 /* end link styling*/
