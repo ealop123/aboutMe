@@ -127,8 +127,7 @@ header h1, header {
 
 main {
   margin-top: -1px;
-  padding-top: 1px;
-  padding-left: 15px;
+  padding: 1px 15px 1px 15px;
 }
 
 /* IMG CAPTION */
@@ -139,6 +138,7 @@ main {
 }
 
 .imgCap {
+  box-sizing: border-box;
   text-align: center;
   font-size: 62%;
   background-color: grey;

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ezekiel - About</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Ezekiel Lopez, donating, and his need to go to college.">
+  <link rel="icon" href="../imgs/favIcon.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <script src="../jquery.js"></script>
+  <script>
+    $(document).ready(function() {
+
+      $("body").hide();
+      $("body").fadeIn(2500);
+
+      $('a').click(function(e) {
+        e.preventDefault();
+        var newLocation = this.href;
+        $('body').fadeOut(1000, function() {
+          window.location = newLocation;
+        });
+      });
+
+      $("#backButton").click(function() {
+        $('body').fadeOut(1000, function() {
+          window.history.back();
+        });
+      });
+
+    });
+  </script>
+  <style>
+    #backButton {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      text-align: left;
+    }
+
+    th,
+    td {
+      padding-left: 1%;
+    }
+
+    main {
+      padding-bottom: 20px;
+    }
+
+    tr:nth-child(even) {
+      background-color: rgba(360, 360, 360, 0.1);
+    }
+
+    th {
+      background-color: rgba(360, 360, 360, 0.4);
+    }
+
+    tr:hover {
+      background-color: darkblue;
+      color: white;
+    }
+
+    @media only screen and (max-width: 500px) {
+      td:nth-child(even),
+      th:nth-child(even) {
+        display: none;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <button id="backButton">Back</button>
+  <div id="page">
+    <header>
+      <h1>Make a good investment!<br>Thank you in advance!</h1>
+    </header>
+    <main>
+      <h2>How much do I need?</h2>
+      <p>Let us go over my budget</p>
+      <table style="width: 100%;">
+        <tr>
+          <th>
+            Need
+          </th>
+          <th>
+            Daily
+          </th>
+          <th>
+            Monthly
+          </th>
+        </tr>
+        <tr>
+          <td>
+            Food
+          </td>
+          <td>
+            $10
+          </td>
+          <td>
+            $300
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Gas
+          </td>
+          <td>
+            $10
+          </td>
+          <td>
+            $300
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Credit Card
+          </td>
+          <td>
+            ~$2.17
+          </td>
+          <td>
+            $65
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Auto Loan
+          </td>
+          <td>
+            ~$5.67
+          </td>
+          <td>
+            $170
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Phone Bill
+          </td>
+          <td>
+            ~$2.33
+          </td>
+          <td>
+            $70
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Insurance
+          </td>
+          <td>
+            ~$4.33
+          </td>
+          <td>
+            $130
+          </td>
+        </tr>
+        <tr style="background-color: rgba(135, 0, 193, 0.2);">
+          <td>
+            Total
+          </td>
+          <td>
+            ~$34.50
+          </td>
+          <td>
+            $1035
+          </td>
+        </tr>
+      </table>
+      <p> In addition to this I need to replace my headlights, as one recently burnt out. I can do the repair myself, but this will cost me $50. I also have to get my oil changed, and this will cost me around $80 because my 2007 Toyota Prius takes full synthetic.</p>
+      <div class="imgWCap">
+        <img src="Toyota Prius" alt="My prius">
+        <div class="imgCap">
+          Sure saves me on gas though
+        </div>
+      </div>
+      <p>In total, over the next two months I will need about $2,070 to allow me to focus entirely on school.
+        <h2> What am I offering in return? </h2>
+        <p>I will pay investments back with apreciation! I am offering <b>10%</b> to whatever amount contributed. Investments will be repaid within six months of contrabution. I am only accepting $3,000 to repay, and I will be paying the money back in the
+          order which I recieved it. I give the six months so when housing allowance, which I have already been <a href="../comingSoon.html">approved</a> for, starts coming in I can not stress about being tight then either. I am expecting to pay investments
+          back long before the end of those six months though.</p>
+        <h2>How do I invest?</h2>
+        <p> I can accept card, check, or cash if you live close enough. Here is a form that I, and only I, have access to submissions. I run cards through PayPal. If you are uncomfortable entering card information online, I am happy to call and work something
+          out over the phone. Either phone or card information MUST be filled out though. After investing, I will add your name to the <a href="../comingSoon.html">investors page</a> and optionally add you to an email list with updates from me :)</p>
+          <hr>
+        <form action="https://formspree.io/engineeringgeek314@gmail.com" method="POST">
+          Name : <input type="text" name="name"><br>
+          Email : <input type="email" name="_replyto"><br>
+          Phone : <input type="phone" name="phone"><br>
+          <input type="submit" value="Send">
+        </form>
+    </main>
+  </div>
+</body>
+
+</html>
