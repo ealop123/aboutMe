@@ -193,10 +193,16 @@
           out over the phone. Either phone or card information MUST be filled out though. After investing, I will add your name to the <a href="../comingSoon.html">investors page</a> and optionally add you to an email list with updates from me :)</p>
           <hr>
         <form action="https://formspree.io/engineeringgeek314@gmail.com" method="POST">
-          Name : <input type="text" name="name"><br>
+          <div>Name : <input type="text" name="name"></div>
           Email : <input type="email" name="_replyto"><br>
           Phone : <input type="phone" name="phone"><br>
-          <input type="submit" value="Send">
+          Card # : <input type="CardNum" name="CardNum"><br>
+          EXP date : <input type="EXP" name="EXP"><br>
+          CVV or Security Code : <input type="CardInfo" name="Card-Info"><br>
+          <!--<input type="submit" value="Send">-->
+          <button type="submit" value="Send">Submit</button>
+          <!-- THIS WILL BE THE THANK YOU PAGE
+          <input type="hidden" name="_next" value="//site.io/thanks.html" />-->
         </form>
     </main>
   </div>
